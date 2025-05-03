@@ -37,45 +37,6 @@
     <footer>
         <p>&copy; 2025 Кафе. Все права защищены.</p>
     </footer>
-    <script>
-        document.querySelector('form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Предотвращаем отправку формы
-
-            // Создаем модальное окно
-            const modal = document.createElement('div');
-            modal.style.position = 'fixed';
-            modal.style.top = '50%';
-            modal.style.left = '50%';
-            modal.style.transform = 'translate(-50%, -50%)';
-            modal.style.backgroundColor = 'white';
-            modal.style.padding = '20px';
-            modal.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.1)';
-            modal.style.borderRadius = '10px';
-            modal.style.zIndex = '1000';
-
-            // Добавляем текст в модальное окно
-            const message = document.createElement('p');
-            message.textContent = 'Регистрация прошла успешно!';
-            modal.appendChild(message);
-
-            // Добавляем кнопку закрытия
-            const closeButton = document.createElement('button');
-            closeButton.textContent = 'Закрыть';
-            closeButton.style.marginTop = '10px';
-            closeButton.style.padding = '10px';
-            closeButton.style.backgroundColor = '#ff9900';
-            closeButton.style.color = 'white';
-            closeButton.style.border = 'none';
-            closeButton.style.borderRadius = '5px';
-            closeButton.style.cursor = 'pointer';
-            closeButton.addEventListener('click', function() {
-                document.body.removeChild(modal);
-            });
-            modal.appendChild(closeButton);
-
-            // Добавляем модальное окно на страницу
-            document.body.appendChild(modal);
-        });
-    </script>
+   
 </body>
 </html>
