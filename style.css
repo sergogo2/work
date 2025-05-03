@@ -1,0 +1,383 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff9900;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #ffcc66;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+}
+
+nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav .menu li {
+    display: inline;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .menu a:hover {
+    background-color: #ff9900;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-container p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #ff9900;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+}
+
+.menu a.active {
+    background-color: #ff9900;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Page-specific sections */
+#menu {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+#gallery {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #cc7a00;
+}
+
+#blog {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-post {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Team Section */
+#team {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Events Section */
+#events {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.event-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Reviews Section */
+#reviews {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Services Section */
+#services {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Registration Form Styling */
+#registration {
+    padding: 20px;
+    background-color: #fff5e6;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#registration form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#registration input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registration button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Animation for Registration Button */
+#registration button {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#registration button:hover {
+    background-color: #cc7a00;
+    transform: scale(1.05);
+}
+
+#registration button:active {
+    transform: scale(0.95);
+}
+
+#registration button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#registration button:hover::after {
+    opacity: 1;
+}
+
+#registration button:hover {
+    background-color: #cc7a00;
+}
+
+/* Styling for the Back button */
+button {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #cc7a00;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
